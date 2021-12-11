@@ -23,3 +23,13 @@ h1 {
 h1 span {
   font-weight: bold;
 }
+
+button {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: blueviolet;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
