@@ -2,11 +2,12 @@ body {
   margin: 0;
   text-align: center;
   padding: 0;
-  background: gainsboro;
+  background: #405564;
+  color: #1b365c;
 }
 
 .container {
-  background: blanchedalmond;
+  background: #f9dca2;
   max-width: 500px;
   min-width: 200px;
   border: 1px solid black;
