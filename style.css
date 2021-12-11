@@ -22,7 +22,7 @@ h1 {
   padding: 30px;
 }
 
-h1 span {
+h1 .title {
   font-weight: bold;
 }
 

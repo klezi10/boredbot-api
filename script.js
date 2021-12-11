@@ -7,6 +7,7 @@ activityBtn.addEventListener('click', () => {
     .then((response) => response.json())
     .then((data) => {
       displayActivity.textContent = data.activity;
+
       displayActivity.classList.add('activity-colored');
 
       if (data.price > 0) {
