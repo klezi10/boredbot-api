@@ -1,7 +1,18 @@
-document.getElementById('activity-btn').addEventListener('click', () => {
-  fetch('https://apis.scrimba.com/bored/api/activity')
+let activityBtn = document.getElementById('activity-btn');
+let apiUrl = 'https://apis.scrimba.com/bored/api/activity';
+let displayActivity = document.getElementById('activity-name');
+
+activityBtn.addEventListener('click', () => {
+  fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      document.getElementById('activity-name').textContent = data.activity;
+      displayActivity.textContent = data.activity;
+      displayActivity.classList.add('activity-colored');
+
+      if (data.price > 0) {
+        displayActivity.textContent += ' ($)';
+      } else {
+        return null;
+      }
     });
 });

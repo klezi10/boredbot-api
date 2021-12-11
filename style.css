@@ -4,6 +4,7 @@ body {
   padding: 0;
   background: #405564;
   color: #1b365c;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -40,4 +41,8 @@ button {
   background: blueviolet;
   border: 1px solid black;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.activity-colored {
+  color: blueviolet;
 }
