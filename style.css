@@ -22,7 +22,7 @@ h1 {
   padding: 30px;
 }
 
-h1 .title {
+h1 #title {
   font-weight: bold;
 }
 
@@ -45,4 +45,21 @@ button {
 
 .activity-colored {
   color: blueviolet;
+}
+
+.animate {
+  display: inline-block;
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
